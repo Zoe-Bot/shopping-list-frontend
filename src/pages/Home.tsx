@@ -1,23 +1,20 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
 const Home: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-
-        <p className="text-red-500">Tets</p>
-
+      <IonContent>
+        <header className="container">
+          <IonTitle className="text-3xl font-semibold mt-16 mx-0 px-0">Einkaufen</IonTitle>
+          <p>4 Items</p>
+        </header>
+        <main>
+          <IonList lines="none">
+            <IonItem className="bg-transparent">Test</IonItem>
+            <IonItem>Test</IonItem>
+            <IonItem>Test</IonItem>
+          </IonList>
+        </main>
       </IonContent>
     </IonPage>
   )
